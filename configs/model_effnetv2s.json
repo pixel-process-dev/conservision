@@ -1,0 +1,24 @@
+{
+  "model_name": "effnetv2s",
+  "backbone": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "img_size": 300,
+  "batch_size": 32,
+  "head_keyword": "classifier",
+
+  "drop_rate": 0.0,
+  "label_smoothing": 0.0,
+
+  "lr_head": 1e-3,
+  "lr_backbone": 1e-5,
+  "weight_decay": 1e-4,
+  "grad_clip_norm": 1.0,
+
+  "epochs_frozen": 5,
+  "epochs_unfrozen": 15,
+  "patience": 5,
+
+  "augmentation": "standard",
+  "class_weighting": "inverse_frequency",
+
+  "timm_create_kwargs": {}
+}

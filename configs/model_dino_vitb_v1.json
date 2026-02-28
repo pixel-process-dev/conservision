@@ -1,0 +1,19 @@
+{
+  "model_name": "dinov2_vitb14",
+  "backbone": "vit_base_patch14_dinov2.lvd142m",
+  "img_size": 252,
+  "batch_size": 8,
+  "head_keyword": "head",
+  "drop_rate": 0.0,
+  "label_smoothing": 0.0,
+  "lr_head": 1e-3,
+  "lr_backbone": 5e-6,
+  "weight_decay": 1e-4,
+  "grad_clip_norm": 1.0,
+  "epochs_frozen": 5,
+  "epochs_unfrozen": 25,
+  "patience": 10,
+  "augmentation": "standard",
+  "class_weighting": "inverse_frequency",
+  "timm_create_kwargs": {"img_size": 252}
+}

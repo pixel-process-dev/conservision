@@ -1,0 +1,27 @@
+{
+  "exp_name": "conservision",
+  "classes": [
+    "antelope_duiker", "bird", "blank", "civet_genet",
+    "hog", "leopard", "monkey_prosimian", "rodent"
+  ],
+  "default_class": "blank",
+  "data_dir": "data/competition",
+  "train_features_file": "train_features.csv",
+  "train_labels_file": "train_labels.csv",
+  "test_features_file": "test_features.csv",
+  "submission_format_file": "submission_format.csv",
+
+  "crop_dir": "data/competition/crops",
+  "crop_metadata_file": "crop_metadata.csv",
+
+  "detection_dir": "data/competition/detections",
+  "speciesnet_dir": "data/competition/speciesnet",
+  "models_dir": "data/competition/models",
+
+  "val_fold": 0,
+  "n_folds": 5,
+  "num_workers": 4,
+
+  "imagenet_mean": [0.485, 0.456, 0.406],
+  "imagenet_std": [0.229, 0.224, 0.225]
+}
