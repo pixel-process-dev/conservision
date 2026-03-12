@@ -8,6 +8,8 @@ processed/
 archive/ 
 models/
 evaluation/ 
+submissions/
+results/
 
 # ----------------------------
 # Model artifacts
