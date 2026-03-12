@@ -1,0 +1,40 @@
+{
+    "models_dir": "models/",
+    "models": [
+        "swinv2_.1_folds",
+        "swinv2_.05_folds",
+        "dino_v2_.1_folds",
+        "dino_v2_.05_folds",
+        "convnext_.1_folds",
+        "convnext_.05_folds",
+        "eva02_.1_folds",
+        "eva02_.05_folds",
+        "swinv2_full_folds",
+        "dino_v2_full_folds",
+        "convnext_full_folds",
+        "eva02_full_folds",
+        "effnetv2s_.1_folds",
+        "effnetv2s_.05_folds",
+        "effnetv2s_full_folds",
+        "dino_v2_.1_192imgsize_folds",
+        "convnext_b32_folds",
+        "dinov2_vitb14_reg4_folds",
+        "dino_v3_.1_folds",
+        "dino_v3_.05_folds",
+        "vit_so150_folds"
+    ],
+    "pred_file": "oof_predictions.csv",
+    "output_dir": "results/ensemble_all20",
+    "methods": {
+        "simple_average": true,
+        "model_weights": true,
+        "class_model_weights": true,
+        "temperature": {
+            "grid": [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 3.0]
+        },
+        "greedy_model": true,
+        "meta_model": {
+            "C": [0.01, 0.1, 1.0, 10.0]
+        }
+    }
+}

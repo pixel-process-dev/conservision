@@ -1,8 +1,8 @@
 {
-  "model_name": "dinov2_vitb14",
-  "backbone": "vit_base_patch14_dinov2.lvd142m",
-  "img_size": 252,
-  "batch_size": 8,
+  "model_name": "swinv2_base",
+  "backbone": "swinv2_base_window12to16_192to256.ms_in22k_ft_in1k",
+  "img_size": 192,
+  "batch_size": 16,
   "head_keyword": "head",
   "drop_rate": 0.0,
   "label_smoothing": 0.0,
@@ -15,5 +15,5 @@
   "patience": 10,
   "augmentation": "standard_mixup",
   "class_weighting": "inverse_frequency",
-  "timm_create_kwargs": {"img_size": 252}
+  "timm_create_kwargs": {"img_size": 192}
 }

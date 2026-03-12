@@ -1,26 +1,19 @@
 {
-  "model_name": "dinov2_vits14",
-  "backbone": "vit_small_patch14_dinov2.lvd142m",
-  "img_size": 252,
+  "model_name": "swinv2_base",
+  "backbone": "swinv2_base_window12to16_192to256.ms_in22k_ft_in1k",
+  "img_size": 256,
   "batch_size": 16,
   "head_keyword": "head",
-
   "drop_rate": 0.0,
   "label_smoothing": 0.0,
-
   "lr_head": 1e-3,
-  "lr_backbone": 1e-5,
+  "lr_backbone": 5e-6,
   "weight_decay": 1e-4,
   "grad_clip_norm": 1.0,
-
   "epochs_frozen": 5,
-  "epochs_unfrozen": 15,
-  "patience": 5,
-
+  "epochs_unfrozen": 25,
+  "patience": 10,
   "augmentation": "standard",
   "class_weighting": "inverse_frequency",
-
-  "timm_create_kwargs": {
-    "img_size": 252
-  }
+  "timm_create_kwargs": {}
 }

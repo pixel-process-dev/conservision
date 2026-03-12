@@ -1,0 +1,23 @@
+{
+    "models_dir": "models/",
+    "models": [
+        "swinv2_.1_folds",
+        "dino_v2_.1_folds",
+        "convnext_.1_folds",
+        "eva02_.1_folds"
+    ],
+    "pred_file": "oof_predictions.csv",
+    "output_dir": "results/ensemble_top4",
+    "methods": {
+        "simple_average": true,
+        "model_weights": true,
+        "class_model_weights": false,
+        "temperature": {
+            "grid": [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]
+        },
+        "greedy_model": true,
+        "meta_model": {
+            "C": [0.1, 1.0]
+        }
+    }
+}

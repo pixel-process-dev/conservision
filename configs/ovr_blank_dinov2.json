@@ -1,13 +1,14 @@
 {
-  "model_name": "convnext_base",
-  "backbone": "convnext_base.fb_in22k_ft_in1k",
-  "img_size": 224,
-  "batch_size": 16,
+  "model_name": "ovr_blank_dinov2",
+  "backbone": "vit_base_patch14_dinov2.lvd142m",
+  "ovr_target": "blank",
+  "img_size": 252,
+  "batch_size": 8,
   "head_keyword": "head",
   "drop_rate": 0.0,
   "label_smoothing": 0.0,
   "lr_head": 1e-3,
-  "lr_backbone": 1e-5,
+  "lr_backbone": 5e-6,
   "weight_decay": 1e-4,
   "grad_clip_norm": 1.0,
   "epochs_frozen": 5,
@@ -15,5 +16,5 @@
   "patience": 10,
   "augmentation": "standard_mixup",
   "class_weighting": "inverse_frequency",
-  "timm_create_kwargs": {}
+  "timm_create_kwargs": {"img_size": 252}
 }

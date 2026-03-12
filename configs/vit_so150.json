@@ -1,10 +1,10 @@
 {
-  "model_name": "eva02_base",
-  "backbone": "eva02_base_patch16_clip_224.merged2b",
-  "img_size": 224,
-  "batch_size": 32,
+  "model_name": "vit_so150_reg4",
+  "backbone": "vit_so150m_patch16_reg4_gap_256.sbb_e250_in12k",
+  "img_size": 252,
+  "batch_size": 8,
   "head_keyword": "head",
-  "drop_rate": 0.1,
+  "drop_rate": 0.0,
   "label_smoothing": 0.0,
   "lr_head": 1e-3,
   "lr_backbone": 5e-6,
@@ -13,7 +13,8 @@
   "epochs_frozen": 5,
   "epochs_unfrozen": 25,
   "patience": 10,
-  "augmentation": "standard_mixup",
+  "augmentation": "heavy",
   "class_weighting": "inverse_frequency",
-  "timm_create_kwargs": {}
+  "timm_create_kwargs": {"img_size": 252}
 }
+

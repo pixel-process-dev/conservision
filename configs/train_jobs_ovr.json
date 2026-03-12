@@ -1,0 +1,7 @@
+[
+    {
+        "label": "ovr_eva02_blank_full",
+        "config": "configs/eva02_ovr.json",
+        "crop_dir": "data/competition/full_images"
+    }
+]

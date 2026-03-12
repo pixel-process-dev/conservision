@@ -1,0 +1,7 @@
+[
+    {
+        "label": "vit_so150",
+        "config": "configs/vit_so150.json",
+        "crop_dir": "data/competition/crops_.1"
+    }
+]

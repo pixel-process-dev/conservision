@@ -1,6 +1,6 @@
 {
-  "model_name": "eva02_base",
-  "backbone": "eva02_base_patch16_clip_224.merged2b",
+  "model_name": "mobilenetv3",
+  "backbone": "mobilenetv4_conv_small.e2400_r224_in1k",
   "img_size": 224,
   "batch_size": 32,
   "head_keyword": "head",
